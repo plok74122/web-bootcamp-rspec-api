@@ -7,7 +7,7 @@ class User < ApplicationRecord
 
   has_many :events
   has_many :attendees
-  has_many :participate_events , :through => :attendees
+  has_many :participate_events , :through => :attendees , :source => :event
 
   def generate_authentication_token
     self.authentication_token = Devise.friendly_token
