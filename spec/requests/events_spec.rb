@@ -76,4 +76,7 @@ RSpec.describe "Events", type: :request do
       # expect(JSON.parse(response.body)).to eq(data)
     end
   end
+  describe "POST /api/v1/events" do
+    # TODO 新增兩個測試 新增成功與失敗的反應
+  end
 end
