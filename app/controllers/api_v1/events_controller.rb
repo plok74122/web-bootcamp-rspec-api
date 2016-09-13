@@ -19,4 +19,8 @@ class ApiV1::EventsController < ApiController
       render :json => { :message => "failed" }, :status => 400
     end
   end
+
+  def update
+
+  end
 end

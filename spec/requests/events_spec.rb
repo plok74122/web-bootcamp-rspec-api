@@ -79,4 +79,25 @@ RSpec.describe "Events", type: :request do
   describe "POST /api/v1/events" do
     # TODO 新增兩個測試 新增成功與失敗的反應
   end
+
+  describe "PATCH /api/v1/event/:id" do
+    # TODO 去除下方所有註解 依據測試功能完成 action update
+    it "can update event information when user is founder" do
+      # patch v1_event_path(event1) , :auth_token => user1.authentication_token , :name => "edit event 1 name" , :description => "edit event 1 description"
+      # expect(response).to have_http_status(200)
+      # expect(JSON.parse(response.body)).to eq(JSON.parse(event1.reload.to_json))
+    end
+    it "can not update event information when user is note founder" do
+      # patch v1_event_path(event1) , :auth_token => user2.authentication_token , :name => "edit event 1 name" , :description => "edit event 1 description"
+      # expect(response).to have_http_status(400)
+      # data = { "message" => "permissions denied" }
+      # expect(JSON.parse(response.body)).to eq(data)
+    end
+    it "will update fail when name or description nil" do
+      # patch v1_event_path(event1) , :auth_token => user1.authentication_token , :name => "edit event 1 name"
+      # expect(response).to have_http_status(400)
+      # data = { "message" => "Update Fail" }
+      # expect(JSON.parse(response.body)).to eq(data)
+    end
+  end
 end
