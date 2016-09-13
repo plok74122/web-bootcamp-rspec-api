@@ -21,6 +21,6 @@ class ApiV1::EventsController < ApiController
   end
 
   def update
-
+    # TODO 依 /spec/requests/events_spec.rb 完成 action show
   end
 end

@@ -1,24 +1,13 @@
 # README
+* bundle
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* rails db:migrate
 
-Things you may want to cover:
+* 完成/spec/requests/auth_spec.rb 內的TODO
 
-* Ruby version
+* 完成/spec/requests/events_spec.rb 去除註解 並完成45,62,63行內容
 
-* System dependencies
+* 完成/spec/requests/events_spec.rb 第80行 TODO
 
-* Configuration
+* 去除/spec/requests/events_spec.rb 83~103行中的註解後 完成84行 TODO
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
